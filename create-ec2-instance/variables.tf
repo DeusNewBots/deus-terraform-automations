@@ -17,6 +17,10 @@ variable "number_of_instances" {
         default = 1
 }
 
+variable "security_groups" {
+        description = "list of security groups attached to instance"
+        default = ["default", "deus-app-vms-sg"]
+}
 
 variable "ami_key_pair_name" {
         default = "rhel-test-keyp"
