@@ -8,3 +8,7 @@ resource "aws_instance" "staging_instance" {
       Env = "Staging"
     }
 }
+
+output "instance_ip_addr" {
+  value = aws_instance.staging_instance.public_ip
+}
