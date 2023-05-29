@@ -23,5 +23,5 @@ variable "security_groups" {
 }
 
 variable "ami_key_pair_name" {
-        default = "rhel-test-keyp"
+        default = "staging_instance_keyp"
 }
